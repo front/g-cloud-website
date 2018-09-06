@@ -1,0 +1,41 @@
+.tabs {
+    display: flex;
+
+    &__tab {
+        width: 145px;
+        height: 40px;
+        background: transparent no-repeat center;
+        margin-right: 55px;
+        cursor: pointer;
+        text-align: center;
+        color: $color-gray;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &--active {
+            color: $color-blue;
+            border-bottom: 2px solid $color-blue;
+            font-weight: bold;
+        }
+
+        &--drupal {
+            background-image: url('../img/drupal.png');
+            background-size: 117px 29px;
+        }
+
+        &--wordpress {
+            background-image: url('../img/wordpress.png');
+            background-size: 128px 29px;
+        }
+    }
+
+    &__content {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+}

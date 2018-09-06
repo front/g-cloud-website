@@ -1,0 +1,14 @@
+.footer {
+    background: $color-black;
+    height: 228px;
+
+    .section {
+        padding-top: 36px;
+    }
+
+    &__logo {
+        background: url('../img/logo-gray.svg');
+        width: 162px;
+        height: 28px;
+    }
+}

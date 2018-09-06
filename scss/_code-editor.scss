@@ -1,0 +1,35 @@
+.code-editor {
+    &__header {
+        background: $color-gray;
+        height: 35px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 10.5px;
+            top: 10.5px;
+            width: 16px;
+            height: 16px;
+            background: $color-lighter-gray;
+            border-radius: 50%;
+        }
+    }
+
+    &__content {
+        background: $color-black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        pre {
+            margin: 0;
+            padding-left: 31px;
+            padding-right: 31px;
+            padding-top: 26px;
+            color: #ffffff;
+            white-space: pre-wrap;
+        }
+    }
+}

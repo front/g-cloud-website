@@ -1,0 +1,9 @@
+{
+  "scripts": {
+     "dev": "node-sass -w style.scss -o assets/css",
+     "build": "node-sass style.scss -o assets/css"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

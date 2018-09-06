@@ -1,0 +1,18 @@
+.section--hero {
+    margin-top: 100px;
+    z-index: 1;
+    position: relative;
+
+    @include desktop() {
+        margin-bottom: 300px;
+    }
+    @include breakpoint() {
+        margin-bottom: 510px;
+    }
+
+    .section__content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+}

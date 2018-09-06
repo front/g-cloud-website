@@ -1,0 +1,26 @@
+$color-blue: #1f6ffc;
+$color-black: #111;
+$color-gray: #9c9c9c;
+$color-light-gray: #f9f9f9;
+$color-lighter-gray: #d8d8d8;
+$color-white: #fff;
+
+$breakpoint: 1185px;
+
+@mixin desktop() {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin breakpoint() {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}

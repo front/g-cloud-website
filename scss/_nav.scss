@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    position: relative;
+
+    .logo {
+        background: url('../img/logo.svg') left no-repeat;
+        height: 40px;
+        width: 233px;
+    }
+}

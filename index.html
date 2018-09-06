@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gutenberg Cloud</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="header">
+        <div class="logo"></div>
+        <div class="right">
+            <a class="btn btn__twitter" href="https://twitter.com/gutenbergcloud">
+                Follow us on Twitter
+            </a>
+        </div>
+    </nav>
+
+    <section class="section section--hero">
+        <div class="section__content">
+            <h1 class="title">Gutenberg Cloud</h1>
+            <h2 class="blue">Your online library of blocks</h2>
+            <div class="cta">
+                <a class="btn" href="https://twitter.com/gutenbergcloud">
+                    Drupal module
+                </a>
+                <a class="btn" href="https://twitter.com/gutenbergcloud">
+                    Wordpress plugin
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section columns">
+        <div class="column">
+            <figure class="column__image">
+                <img src="assets/img/search.svg" alt="Discover new blocks">
+            </figure>
+            <h3 class="column__heading">Discover new blocks</h3>
+            <p class="column__description">
+                Browse for new blocks inside your CMS. Click to install and
+                use right away.
+            </p>
+        </div>
+        <div class="column">
+            <figure class="column__image">
+                <img src="assets/img/plugin.svg" alt="Discover new blocks">
+            </figure>
+            <h3 class="column__heading">No plugin bloat</h3>
+            <p class="column__description">
+                This is the only CMS plugin you need to browse and install
+                new blocks.
+            </p>
+        </div>
+        <div class="column">
+            <figure class="column__image">
+                <img src="assets/img/reuse.svg" alt="Discover new blocks">
+            </figure>
+            <h3 class="column__heading">Reuse across CMSs</h3>
+            <p class="column__description">
+                Gutenberg blocks can be used in Drupal and Wordpress.
+            </p>
+        </div>
+        <div class="column">
+            <figure class="column__image">
+                <img src="assets/img/share.svg" alt="Discover new blocks">
+            </figure>
+            <h3 class="column__heading">Share your code</h3>
+            <p class="column__description">
+                Make your code available to the world simply by creating NPM
+                package.
+            </p>
+        </div>
+    </section>
+
+    <div class="wrapper-background-gray">
+        <section class="section section__content">
+            <div class="section__column">
+                <img class="section__image" src="assets/img/get-started.png" alt="">
+            </div>
+            <div class="section__column">
+                <h1>Get started</h1>
+                <div class="column-content tabs-wrapper">
+                    <div class="tabs">
+                        <div data-tab="drupal" class="tabs__tab tabs__tab--drupal tabs__tab--active"></div>
+                        <div data-tab="wordpress" class="tabs__tab tabs__tab--wordpress"></div>
+                    </div>
+                    <div class="tabs__content tabs__content--drupal tabs__content--active">
+                        <ol>
+                            <li class="active">Install and enable the module for Drupal</li>
+                            <li>Browse for the blocks you need</li>
+                            <li>Click to make the block available to Gutenberg in your website</li>
+                        </ol>
+                    </div>
+                    <div class="tabs__content tabs__content--wordpress">
+                        <ol>
+                            <li class="active">Install and enable the plugin for Wordpress</li>
+                            <li>Browse for the blocks you need</li>
+                            <li>Click to make the block available to Gutenberg in your website</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="section section__content">
+        <div class="section__column">
+            <h1>How it works</h1>
+            <div class="column-content">
+                <p>
+                    Gutenberg Cloud is an ecosystem for browsing Gutenberg blocks. What you see in the browser, is
+                    really all packages from npmjs.org
+                    tagged with the keyword “gutenberg-blocks”. Anyone can contribute their own blocks by publishing
+                    their
+                    code to NPM.
+                </p>
+
+                <p>
+                    When you select a block, the block is downloaded into a folder on your website. As Gutenberg blocks
+                    are mostly JavaScript
+                    and CSS, they can be used across different CMSs.
+                </p>
+            </div>
+        </div>
+        <div class="section__column">
+            <a class="video-link" href="#">
+                <img class="section__image section__image--video" src="assets/img/how-it-works.png" alt="">
+                <span class="video-link__text">Play video</span>
+            </a>
+        </div>
+    </section>
+
+    <div class="wrapper-background-blue">
+        <section class="section section__content">
+            <div class="section__column"><img src="" alt="">
+            </div>
+            <div class="section__column">
+                <h1>Why?</h1>
+                <div class="column-content">
+                    <p>
+                        Code once, use everywhere: As Gutenberg blocks are CMS agnostic, we want to provide an
+                        ecosystem all systems can connect
+                        to.
+                    </p>
+
+                    <p>
+                        One plugin: Installing an actual plugin/module for each block or block collection easily leads
+                        to managing lots of code that
+                        you don’t really need. It’s like having one app for each website you visit, instead of just
+                        installing
+                        a browser. With the block manager, you have a growing library at your fingertips, without the
+                        bloat.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="section">
+        <h1 class="center">Share your code</h1>
+        <div class="section__content">
+            <div class="section__column">
+                <ol>
+                    <li class="active">Create your block</li>
+                    <li>Publish it to NPM and tag it “gutenberg-cloud”</li>
+                    <li>Make sure to add the custom tag “screenshot” in your package.json</li>
+                    <li>Wait a few hours for NPM to update, and your blocks are automatically available</li>
+                </ol>
+            </div>
+            <div class="section__column">
+                <div class="code-editor">
+                    <div class="code-editor__header"></div>
+                    <div class="code-editor__content">
+                        <pre>
+&lt;!doctype html&gt;
+
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;title&gt;Your Block&lt;/title&gt;
+    &lt;meta name="description" content="Your GutenbergCloud Block"&gt;
+    &lt;meta name="author" content="You"&gt;
+
+&lt;/head&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section buttons">
+        <a class="btn" href="https://twitter.com/gutenbergcloud">
+            Official Gutenberg documentation
+        </a>
+        <a class="btn" href="https://twitter.com/gutenbergcloud">
+            Example block on NPM: Hero section
+        </a>
+    </section>
+
+    <section class="section discover">
+        <h1>Discover blocks</h1>
+
+        <div class="tabs-wrapper">
+            <div class="tabs">
+                <div data-tab="featured" class="tabs__tab tabs__tab--active">Featured</div>
+                <div data-tab="popular" class="tabs__tab">Popular</div>
+                <div data-tab="latest" class="tabs__tab">Latest</div>
+            </div>
+            <div class="tabs__content tabs__content--featured tabs__content--active blocks columns">
+                <article class="block">
+                    <img class="block__image" src="https://picsum.photos/200/300" alt="Education X">
+                    <h3 class="block__title">Education X</h3>
+                </article>
+                <article class="block">
+                    <img class="block__image" src="https://picsum.photos/200/300" alt="Education X">
+                    <h3 class="block__title">Education X</h3>
+                </article>
+                <article class="block">
+                    <img class="block__image" src="https://picsum.photos/200/300" alt="Education X">
+                    <h3 class="block__title">Education X</h3>
+                </article>
+                <article class="block">
+                    <img class="block__image" src="https://picsum.photos/200/300" alt="Education X">
+                    <h3 class="block__title">Education X</h3>
+                </article>
+                <article class="block">
+                    <img class="block__image" src="https://picsum.photos/200/300" alt="Education X">
+                    <h3 class="block__title">Education X</h3>
+                </article>
+                <article class="block">
+                    <img class="block__image" src="https://picsum.photos/200/300" alt="Education X">
+                    <h3 class="block__title">Education X</h3>
+                </article>
+                <article class="block">
+                    <img class="block__image" src="https://picsum.photos/200/300" alt="Education X">
+                    <h3 class="block__title">Education X</h3>
+                </article>
+                <article class="block">
+                    <img class="block__image" src="https://picsum.photos/200/300" alt="Education X">
+                    <h3 class="block__title">Education X</h3>
+                </article>
+            </div>
+            <div class="tabs__content tabs__content--popular">
+                <ol>
+                    <li class="active">Install and enable the plugin for Wordpress</li>
+                    <li>Browse for the blocks you need</li>
+                    <li>Click to make the block available to Gutenberg in your website</li>
+                </ol>
+            </div>
+            <div class="tabs__content tabs__content--latest">
+                <ol>
+                    <li class="active">Install and enable the plugin for Wordpress</li>
+                    <li>Browse for the blocks you need</li>
+                    <li>Click to make the block available to Gutenberg in your website</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section">
+            <div class="footer__logo"></div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

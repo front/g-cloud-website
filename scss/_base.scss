@@ -1,0 +1,92 @@
+html,
+body {
+    color: $color-black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+
+body {
+    position: relative;
+    background: url('../img/hero.png');
+    background-position: right 0;
+    background-repeat: no-repeat;
+    background-size: 700px;
+
+    @include desktop() {
+        background-size: 100%;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 500px;
+        width: 100vw;
+        background: linear-gradient(
+            310.96deg,
+            rgba(255, 255, 255, 0) 0,
+            #fff 50%
+        );
+
+        @include desktop() {
+            width: 833px;
+            height: 800px;
+        }
+    }
+}
+
+nav,
+.section {
+    width: 100%;
+    max-width: $breakpoint;
+    margin: 0;
+    padding: 0 20px;
+    width: calc(100% - 40px);
+
+    @include breakpoint() {
+        margin: 0 auto;
+    }
+}
+
+.section {
+    padding: 10px 20px;
+    @include breakpoint() {
+        padding: 100px 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h3,
+h5,
+h6 {
+    font-family: 'Noto Serif', serif;
+}
+
+h1 {
+    font-size: 3em;
+
+    @include tablet() {
+        font-size: 3.75em;
+    }
+
+    &.title {
+        margin-bottom: 0;
+    }
+}
+
+h2.blue {
+    margin-top: 4px;
+    color: $color-blue;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2em;
+}
+
+h3 {
+    font-size: 1.25em;
+}

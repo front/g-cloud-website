@@ -1,0 +1,28 @@
+.columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1em;
+    column-gap: 1em;
+    row-gap: 1em;
+
+    @include tablet() {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include desktop() {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.column {
+    text-align: center;
+
+    &__image img {
+        height: 100px;
+    }
+
+    &__description {
+        font-weight: 600;
+        color: $color-gray;
+    }
+}
